@@ -656,6 +656,11 @@
                     transformador de las telecomunicaciones para conectar personas, impulsar el progreso y crear 
                     oportunidades que mejoren la calidad de vida de las comunidades.
                 </p>
+				<p>
+                    Actualmente en el Centro de Investigaciones Sociológicas de la Administración General del Estado 
+                    me encuentro en una posición privilegiada para hacer confluir ambos mundos, tecnología y personas, 
+                    en pos de la mejora de un estado de bienestar tan denostado y anhelado, a partes iguales, en los últimos tiempos.
+                </p>
             </div>
             <button class="expand-btn" onclick="openModal('about')">+</button>
         </section>
@@ -666,6 +671,7 @@
         <section id="experience">
             <h2>Experiencia</h2>
             <div class="experience-grid">
+			
                 <div class="experience-item fade-in delay-1">
                     <div class="exp-left">
                         <div class="exp-date">2022 — Presente</div>
@@ -679,10 +685,10 @@
                         </p>
                     </div>
                 </div>
-
+				
                 <div class="experience-item fade-in delay-1">
                     <div class="exp-left">
-                        <div class="exp-date">2018 — 2022</div>
+                        <div class="exp-date">2018 — Presente</div>
                         <div class="exp-company">Telecomunicaciones Global S.A.</div>
                     </div>
                     <div class="exp-right">
@@ -953,6 +959,315 @@
                 const target = document.querySelector(this.getAttribute('href'));
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
+        });
+
+        // Contenido de los modales
+        const modalContents = {
+            about: `
+                <h2 class="modal-title">Sobre <span class="accent">Mí</span></h2>
+                <div class="modal-text">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 4rem;">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&auto=format" 
+                                 alt="Modest Martinez" 
+                                 style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);">
+                        </div>
+                        <div>
+                            <h3>Mi Trayectoria</h3>
+                            <p>
+                                Desde mis primeros años universitarios, me fascinó el potencial de las telecomunicaciones 
+                                para transformar sociedades. Comencé mi carrera en el sector privado, donde rápidamente 
+                                descubrí que la tecnología no es solo código e infraestructura, sino un puente que conecta 
+                                personas y oportunidades.
+                            </p>
+                            <p>
+                                Durante mis primeros años como ingeniero, me enfoqué en el diseño de redes de fibra óptica, 
+                                trabajando directamente en proyectos que llevaban conectividad a zonas rurales. Esta 
+                                experiencia marcó profundamente mi visión: la tecnología debe servir a todos, no solo a unos pocos.
+                            </p>
+                            <p>
+                                Con el paso de los años, asumí roles de mayor responsabilidad, liderando equipos 
+                                multidisciplinares en proyectos de gran envergadura. La transición al 5G y el desarrollo 
+                                de smart cities han sido los hitos más relevantes de mi carrera reciente, permitiéndome 
+                                combinar mi pasión técnica con una visión estratégica del futuro.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3>Conferencias y Ponencias</h3>
+                    <p>
+                        He tenido el privilegio de compartir mi conocimiento y experiencia en diversos foros 
+                        internacionales, contribuyendo al diálogo global sobre el futuro de las telecomunicaciones:
+                    </p>
+                    <ul>
+                        <li><strong>Mobile World Congress 2023 (Barcelona)</strong> — "El futuro del 5G: Más allá de la velocidad"</li>
+                        <li><strong>IEEE International Conference on Communications 2022</strong> — "Infraestructura sostenible para ciudades inteligentes"</li>
+                        <li><strong>TEDx Valencia 2021</strong> — "Conectar para transformar: Telecomunicaciones con propósito social"</li>
+                        <li><strong>European Telecommunications Standards Institute 2020</strong> — "Estándares de seguridad en redes 5G"</li>
+                        <li><strong>Smart City Expo World Congress 2019</strong> — "IoT como motor de desarrollo urbano sostenible"</li>
+                    </ul>
+
+                    <h3>Deportes y Hobbies</h3>
+                    <p>
+                        Fuera del ámbito profesional, creo firmemente en mantener un equilibrio entre mente y cuerpo. 
+                        El deporte y las actividades creativas son fundamentales para mi bienestar:
+                    </p>
+                    <ul>
+                        <li><strong>Ciclismo de montaña</strong> — Las rutas por la Serra Calderona me permiten desconectar y conectar con la naturaleza. He participado en varias maratones de BTT.</li>
+                        <li><strong>Running</strong> — Corro regularmente y he completado cinco maratones, incluyendo el de Valencia y Barcelona.</li>
+                        <li><strong>Fotografía</strong> — Capturo paisajes y momentos urbanos, explorando la intersección entre tecnología y arte visual.</li>
+                        <li><strong>Lectura</strong> — Especialmente ensayos sobre tecnología, innovación y filosofía. También disfruto de la ciencia ficción.</li>
+                        <li><strong>Ajedrez</strong> — Me fascina la estrategia y el pensamiento anticipatorio que requiere este juego milenario.</li>
+                    </ul>
+
+                    <p style="margin-top: 3rem;">
+                        Esta combinación de pasiones profesionales y personales define quién soy: un ingeniero 
+                        comprometido con el impacto social de la tecnología, que encuentra inspiración tanto en los 
+                        desafíos técnicos como en las pequeñas aventuras de la vida cotidiana.
+                    </p>
+                </div>
+            `,
+            experience: `
+                <h2 class="modal-title">Experiencia <span class="accent">Detallada</span></h2>
+                <div class="modal-text">
+                    <h3>Director de Tecnología e Innovación (2018 - Presente)</h3>
+                    <p><strong>Telecomunicaciones Global S.A.</strong></p>
+                    <p>
+                        En mi rol actual, lidero la estrategia tecnológica de una de las principales empresas de 
+                        telecomunicaciones del país, supervisando un equipo de más de 50 ingenieros especializados.
+                    </p>
+                    <ul>
+                        <li>Implementación exitosa de la red 5G en 15 ciudades principales, alcanzando cobertura del 85%</li>
+                        <li>Desarrollo de plataforma IoT propietaria para gestión de smart cities, adoptada por 8 municipios</li>
+                        <li>Reducción del 30% en costes operativos mediante optimización de infraestructura y automatización</li>
+                        <li>Liderazgo en transformación digital: migración completa a arquitectura cloud-native</li>
+                        <li>Establecimiento de alianzas estratégicas con AWS, Microsoft Azure y Google Cloud</li>
+                    </ul>
+
+                    <h3>Gerente de Proyectos Senior (2012 - 2018)</h3>
+                    <p><strong>Innovatech Solutions</strong></p>
+                    <p>
+                        Coordinación de proyectos de infraestructura crítica a nivel nacional, gestionando presupuestos 
+                        superiores a 10M€ y equipos distribuidos geográficamente.
+                    </p>
+                    <ul>
+                        <li>Dirección de 12 proyectos simultáneos de despliegue de fibra óptica en zonas rurales</li>
+                        <li>Implementación de soluciones IoT para monitorización energética en 50+ edificios corporativos</li>
+                        <li>Diseño e implementación de red mesh para campus universitario de 20,000 usuarios</li>
+                        <li>Gestión de stakeholders: clientes corporativos, administraciones públicas y proveedores</li>
+                    </ul>
+
+                    <h3>Ingeniero de Telecomunicaciones (2005 - 2012)</h3>
+                    <p><strong>Redes y Sistemas Avanzados</strong></p>
+                    <p>
+                        Mis primeros años profesionales estuvieron enfocados en el diseño técnico y la implementación 
+                        directa de soluciones de telecomunicaciones.
+                    </p>
+                    <ul>
+                        <li>Diseño de redes FTTH (Fiber to the Home) para comunidades residenciales</li>
+                        <li>Optimización de sistemas de transmisión por microondas para clientes del sector energético</li>
+                        <li>Consultoría técnica especializada para instituciones financieras</li>
+                        <li>Desarrollo de herramientas de monitorización de red usando Python y SNMP</li>
+                    </ul>
+                </div>
+            `,
+            skills: `
+                <h2 class="modal-title">Habilidades <span class="accent">Técnicas</span></h2>
+                <div class="modal-text">
+                    <h3>Telecomunicaciones Avanzadas</h3>
+                    <ul>
+                        <li><strong>Redes 5G/LTE:</strong> Diseño, planificación y optimización de redes móviles de nueva generación</li>
+                        <li><strong>Fibra Óptica:</strong> Arquitectura GPON, FTTH, transmisión DWDM de alta capacidad</li>
+                        <li><strong>Sistemas de Radiofrecuencia:</strong> Planificación de cobertura, propagación, antenas</li>
+                        <li><strong>Protocolos de Red:</strong> TCP/IP, MPLS, BGP, OSPF, SDN/NFV</li>
+                        <li><strong>Core Network:</strong> IMS, EPC, 5G Core, VoLTE</li>
+                    </ul>
+
+                    <h3>IoT y Smart Cities</h3>
+                    <ul>
+                        <li><strong>Plataformas IoT:</strong> AWS IoT, Azure IoT Hub, desarrollo de soluciones personalizadas</li>
+                        <li><strong>Protocolos IoT:</strong> MQTT, CoAP, LoRaWAN, NB-IoT</li>
+                        <li><strong>Edge Computing:</strong> Procesamiento distribuido, fog computing</li>
+                        <li><strong>Sensores y Actuadores:</strong> Integración de dispositivos, gestión de flotas</li>
+                    </ul>
+
+                    <h3>Cloud Computing y DevOps</h3>
+                    <ul>
+                        <li><strong>Plataformas Cloud:</strong> AWS (Solutions Architect Associate), Azure, Google Cloud</li>
+                        <li><strong>Containerización:</strong> Docker, Kubernetes, microservicios</li>
+                        <li><strong>CI/CD:</strong> Jenkins, GitLab CI, automatización de despliegues</li>
+                        <li><strong>Infrastructure as Code:</strong> Terraform, Ansible, CloudFormation</li>
+                    </ul>
+
+                    <h3>Gestión y Liderazgo</h3>
+                    <ul>
+                        <li><strong>Metodologías Ágiles:</strong> Scrum Master certificado, Kanban, SAFe</li>
+                        <li><strong>Gestión de Proyectos:</strong> PMP, PRINCE2, planificación estratégica</li>
+                        <li><strong>Liderazgo de Equipos:</strong> Gestión de equipos distribuidos, mentoría técnica</li>
+                        <li><strong>Gestión Financiera:</strong> Presupuestos, ROI, análisis coste-beneficio</li>
+                    </ul>
+
+                    <h3>Herramientas y Lenguajes</h3>
+                    <ul>
+                        <li><strong>Programación:</strong> Python, Java, JavaScript, Bash scripting</li>
+                        <li><strong>Bases de Datos:</strong> PostgreSQL, MySQL, MongoDB, Redis</li>
+                        <li><strong>Análisis de Datos:</strong> Pandas, NumPy, Matplotlib, Jupyter</li>
+                        <li><strong>Simulación:</strong> MATLAB, Simulink, NS-3, OMNeT++</li>
+                        <li><strong>Diseño:</strong> AutoCAD, Visio, Lucidchart</li>
+                    </ul>
+
+                    <h3>Ciberseguridad</h3>
+                    <ul>
+                        <li><strong>Seguridad de Red:</strong> Firewalls, IDS/IPS, VPN, segmentación</li>
+                        <li><strong>Cifrado:</strong> TLS/SSL, IPSec, criptografía aplicada</li>
+                        <li><strong>Compliance:</strong> ISO 27001, GDPR, auditorías de seguridad</li>
+                        <li><strong>Gestión de Vulnerabilidades:</strong> Penetration testing, análisis de riesgos</li>
+                    </ul>
+                </div>
+            `,
+            education: `
+                <h2 class="modal-title">Formación <span class="accent">Académica</span></h2>
+                <div class="modal-text">
+                    <h3>Ingeniería Superior de Telecomunicaciones</h3>
+                    <p><strong>Universidad Politécnica de Valencia (2000 - 2005)</strong></p>
+                    <p>
+                        Formación integral en sistemas de telecomunicación, con especialización en redes de 
+                        comunicaciones y procesamiento digital de señales.
+                    </p>
+                    <ul>
+                        <li><strong>Especialización:</strong> Sistemas de Telecomunicación</li>
+                        <li><strong>Proyecto Final:</strong> "Optimización de Redes de Nueva Generación mediante Algoritmos Genéticos"</li>
+                        <li><strong>Calificación:</strong> Matrícula de Honor (9.2/10)</li>
+                        <li><strong>Áreas destacadas:</strong> Teoría de comunicaciones, sistemas de radiofrecuencia, redes de datos</li>
+                        <li><strong>Prácticas:</strong> Departamento de I+D en Telefónica (6 meses)</li>
+                    </ul>
+
+                    <h3>Executive MBA</h3>
+                    <p><strong>IESE Business School (2015 - 2016)</strong></p>
+                    <p>
+                        Programa ejecutivo enfocado en liderazgo estratégico, gestión de la innovación y 
+                        transformación digital en organizaciones tecnológicas.
+                    </p>
+                    <ul>
+                        <li><strong>Especialización:</strong> Gestión de la Innovación Tecnológica</li>
+                        <li><strong>Proyecto Final:</strong> "Estrategias de Transformación Digital en el Sector Telecomunicaciones"</li>
+                        <li><strong>Módulos destacados:</strong> Estrategia corporativa, finanzas, marketing, operaciones</li>
+                        <li><strong>Programa Internacional:</strong> Residencia de 2 semanas en Silicon Valley</li>
+                    </ul>
+
+                    <h3>Certificaciones Profesionales</h3>
+                    <ul>
+                        <li><strong>AWS Certified Solutions Architect - Associate</strong> (2022)</li>
+                        <li><strong>Project Management Professional (PMP)</strong> - PMI (2019)</li>
+                        <li><strong>Certified Scrum Master (CSM)</strong> - Scrum Alliance (2018)</li>
+                        <li><strong>ITIL Foundation v4</strong> - Axelos (2020)</li>
+                        <li><strong>Cisco Certified Network Professional (CCNP)</strong> (2010)</li>
+                        <li><strong>5G Network Specialist</strong> - Ericsson Academy (2021)</li>
+                    </ul>
+
+                    <h3>Formación Continua</h3>
+                    <ul>
+                        <li><strong>Machine Learning Specialization</strong> - Stanford University (Coursera, 2023)</li>
+                        <li><strong>IoT Systems and Industrial Applications</strong> - MIT (edX, 2021)</li>
+                        <li><strong>Cybersecurity Fundamentals</strong> - Rochester Institute of Technology (2020)</li>
+                        <li><strong>Advanced Network Architecture</strong> - UC San Diego (2019)</li>
+                    </ul>
+
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li><strong>Español:</strong> Nativo</li>
+                        <li><strong>Inglés:</strong> Avanzado (C1) - TOEFL iBT 105/120</li>
+                        <li><strong>Francés:</strong> Intermedio (B1)</li>
+                    </ul>
+                </div>
+            `,
+            contact: `
+                <h2 class="modal-title">Hablemos de <span class="accent">Tecnología</span></h2>
+                <div class="modal-text">
+                    <p style="font-size: 1.4rem; margin-bottom: 3rem;">
+                        Estoy siempre abierto a colaborar en proyectos innovadores, compartir conocimientos o 
+                        explorar nuevas oportunidades en el sector de las telecomunicaciones y la tecnología.
+                    </p>
+
+                    <h3>Información de Contacto</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin: 3rem 0;">
+                        <div>
+                            <h4 style="color: #ff6b00; margin-bottom: 0.5rem;">Email</h4>
+                            <p><a href="mailto:modest.martinez@email.com" style="color: #1a1a1a; text-decoration: none;">modest.martinez@email.com</a></p>
+                        </div>
+                        <div>
+                            <h4 style="color: #ff6b00; margin-bottom: 0.5rem;">Teléfono</h4>
+                            <p><a href="tel:+34600000000" style="color: #1a1a1a; text-decoration: none;">+34 600 000 000</a></p>
+                        </div>
+                        <div>
+                            <h4 style="color: #ff6b00; margin-bottom: 0.5rem;">LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/modestmartinez" target="_blank" style="color: #1a1a1a; text-decoration: none;">linkedin.com/in/modestmartinez</a></p>
+                        </div>
+                        <div>
+                            <h4 style="color: #ff6b00; margin-bottom: 0.5rem;">GitHub</h4>
+                            <p><a href="https://github.com/modestmartinez" target="_blank" style="color: #1a1a1a; text-decoration: none;">github.com/modestmartinez</a></p>
+                        </div>
+                    </div>
+
+                    <h3>Disponibilidad</h3>
+                    <ul>
+                        <li><strong>Consultoría y Asesoramiento:</strong> Disponible para proyectos de consultoría estratégica en telecomunicaciones y transformación digital</li>
+                        <li><strong>Conferencias y Ponencias:</strong> Interesado en participar como speaker en eventos tecnológicos</li>
+                        <li><strong>Mentoría:</strong> Abierto a mentorar jóvenes ingenieros y profesionales del sector</li>
+                        <li><strong>Colaboraciones Académicas:</strong> Disponible para colaborar en proyectos de investigación universitarios</li>
+                    </ul>
+
+                    <h3>Áreas de Interés</h3>
+                    <ul>
+                        <li>Implementación de redes 5G y 6G</li>
+                        <li>Smart Cities y aplicaciones IoT para desarrollo sostenible</li>
+                        <li>Inteligencia Artificial aplicada a telecomunicaciones</li>
+                        <li>Ciberseguridad en infraestructuras críticas</li>
+                        <li>Transformación digital en sectores tradicionales</li>
+                        <li>Edge Computing y procesamiento distribuido</li>
+                    </ul>
+
+                    <p style="margin-top: 3rem; font-size: 1.2rem;">
+                        <strong>Ubicación:</strong> Valencia, España<br>
+                        <strong>Horario preferente de contacto:</strong> Lunes a Viernes, 9:00 - 18:00 CET
+                    </p>
+
+                    <p style="margin-top: 3rem; padding: 2rem; background: #f9f9f9; border-left: 3px solid #ff6b00; border-radius: 5px;">
+                        💡 <em>"La mejor manera de predecir el futuro es construirlo. Si tienes un proyecto 
+                        que puede marcar la diferencia, me encantaría ser parte de él."</em>
+                    </p>
+                </div>
+            `
+        };
+
+        // Funciones del modal
+        function openModal(section) {
+            const modal = document.getElementById('modal');
+            const modalContent = document.getElementById('modal-content');
+            
+            modalContent.innerHTML = modalContents[section];
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Cerrar modal al hacer click fuera del contenido
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                closeModal();
+            }
         });
 
         // Animación de barras de habilidades
